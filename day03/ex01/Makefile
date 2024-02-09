@@ -1,4 +1,4 @@
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 NAME = ./ClapTrap
 
@@ -6,7 +6,7 @@ OBJ = $(SRCS:.cpp=.o)
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-HEADRES = CLapTrap.hpp
+HEADRES = ClapTrap.hpp ScavTrap.hpp
 
 %.o : %.cpp $(HEADRES)
 	c++ $(FLAGS) -c $< -o $@

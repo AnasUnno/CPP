@@ -6,7 +6,7 @@ OBJ = $(SRCS:.cpp=.o)
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-HEADRES = CLapTrap.hpp
+HEADRES = ClapTrap.hpp
 
 %.o : %.cpp $(HEADRES)
 	c++ $(FLAGS) -c $< -o $@

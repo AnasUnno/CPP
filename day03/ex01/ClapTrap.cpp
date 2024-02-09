@@ -2,7 +2,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout<<"Default constructor called"<<std::endl;
+	std::cout<<"ClapTrap Default constructor called"<<std::endl;
 	this->HitPoints = 10;
 	this->EnergiePoints = 10;
 	this->AttackDamage = 0;
@@ -10,12 +10,12 @@ ClapTrap::ClapTrap()
 
 ClapTrap::~ClapTrap()
 {
-	std::cout<<"Destructor called"<<std::endl;
+	std::cout<<"ClapTrap Destructor called"<<std::endl;
 }
 
 ClapTrap::ClapTrap(std::string& name)
 {
-	std::cout<<"Parametrized constructor called"<<std::endl;
+	std::cout<<"ClapTrap Parametrized constructor called"<<std::endl;
 	this->Name = name;
 	this->HitPoints = 10;
 	this->EnergiePoints = 10;
