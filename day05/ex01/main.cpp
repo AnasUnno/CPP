@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: araji-af <araji-af@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/23 17:58:10 by araji-af          #+#    #+#             */
-/*   Updated: 2024/02/23 18:12:26 by araji-af         ###   ########.fr       */
+/*   Created: 2024/02/23 20:05:30 by araji-af          #+#    #+#             */
+/*   Updated: 2024/02/24 01:48:53 by araji-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-
-#include <iostream>
+#include "Bureaucrat.hpp"
 #include <exception>
 
-class Bureaucrat
+int main(void)
 {
-	private:
-
-	const std::string Name;
-	int	grade;
-
-	public:
-
-	Bureaucrat();
-	Bureaucrat(const Bureaucrat& Original);
-	void	operator=(const Bureaucrat& Original);
-	~Bureaucrat();
-};
+	try
+	{
+		Bureaucrat obj(1, "first");
+		obj.decrement();
+		obj.decrement();
+	}
+	catch(std::exception &e)
+	{
+		std::cout<<e.what()<<std::endl;
+	}
+	return 0;
+}
